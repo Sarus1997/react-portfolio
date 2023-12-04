@@ -1,5 +1,7 @@
 # Getting Started with Create React App
 
+<img src="https://miro.medium.com/v2/resize:fit:720/format:webp/1*a-HMmQFQNC76zCZBZfFgJg.gif">
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
