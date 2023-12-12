@@ -148,13 +148,9 @@ export default function IndexNavbar() {
                 รวมเมนู
               </DropdownToggle>
               <DropdownMenu className="dropdown-with-icons">
-                <DropdownItem tag={Link} to="/register-page">
-                  <i className="tim-icons icon-bullet-list-67" />
-                  Register Page
-                </DropdownItem>
-                <DropdownItem tag={Link} to="/landing-page">
+                <DropdownItem tag={Link} to="/certificate-page">
                   <i className="tim-icons icon-image-02" />
-                  Landing Page
+                  รวมใบเซอร์
                 </DropdownItem>
                 <DropdownItem tag={Link} to="/profile-page">
                   <i className="tim-icons icon-single-02" />

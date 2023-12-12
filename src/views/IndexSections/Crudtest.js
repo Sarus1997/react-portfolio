@@ -73,11 +73,11 @@ export default class Crudtest extends Component {
     handleAddItem = () => {
         const newItem = {
             id: this.state.items.length + 1, // Auto-increment id
-            fname: this.state.fname, // Corrected to use state
-            lname: this.state.lname, // Corrected to use state
-            sex: this.state.sex, // Corrected to use state
-            old: this.state.old, // Corrected to use state
-            about: this.state.about, // Corrected to use state
+            fname: this.state.fname,
+            lname: this.state.lname,
+            sex: this.state.sex,
+            old: this.state.old,
+            about: this.state.about,
         };
 
         this.setState((prevState) => ({
@@ -119,11 +119,11 @@ export default class Crudtest extends Component {
         const updatedItems = [...this.state.items];
         updatedItems[this.state.editIndex] = {
             id: this.state.id,
-            fname: this.state.fname, // Corrected to use state
-            lname: this.state.lname, // Corrected to use state
-            sex: this.state.sex, // Corrected to use state
-            old: this.state.old, // Corrected to use state
-            about: this.state.about, // Corrected to use state
+            fname: this.state.fname,
+            lname: this.state.lname,
+            sex: this.state.sex,
+            old: this.state.old,
+            about: this.state.about,
         };
 
         this.setState({
