@@ -79,7 +79,7 @@ export default function Footer() {
             <h3 className="title">แผนที่ :</h3>
             <div className="btn-wrapper profile">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3876.5434466891024!2d100.60850082590171!3d13.685502798823272!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e29ed269181bb1%3A0x60c3178ba983c76!2z4LiX4Lij4Li5IOC4lOC4tOC4iOC4tOC4l-C4seC4pSDguJ7guLLguKPguYzguIQ!5e0!3m2!1sth!2sth!4v1695969936320!5m2!1sth!2sth"
+                src="https://www.google.com/maps/embed?pb=!1m24!1m12!1m3!1d3960.4660914156657!2d99.880845725818!3d6.954216768006583!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m9!3e6!4m3!3m2!1d6.9541907!2d99.8838718!4m3!3m2!1d6.9541667!2d99.88386109999999!5e0!3m2!1sth!2sth!4v1702349177862!5m2!1sth!2sth"
                 width="100%"
                 height="350"
                 style={{ border: '0' }}

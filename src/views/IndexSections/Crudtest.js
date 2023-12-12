@@ -33,7 +33,7 @@ export default class Crudtest extends Component {
                     lname: 'Doe',
                     sex: 'ชาย',
                     old: 30,
-                    about: 'Lorem ipsum dolor sit amet.'
+                    about: 'about'
                 },
                 {
                     id: 2,
@@ -41,7 +41,7 @@ export default class Crudtest extends Component {
                     lname: 'Doe',
                     sex: 'หญิง',
                     old: 28,
-                    about: 'Consectetur adipiscing elit.'
+                    about: 'about'
                 },
                 
             ],
