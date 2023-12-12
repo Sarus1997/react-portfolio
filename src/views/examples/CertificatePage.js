@@ -28,7 +28,7 @@ export default function LandingPage() {
           <h1
             style={{ margin: '150px' }}
             className="text-center">
-            Your best benefit
+            Certificate
           </h1>
           <Row>
             <Col md="6">
@@ -39,9 +39,7 @@ export default function LandingPage() {
                 />
                 <hr className="line-primary" />
                 <p>
-                  Divide details about your work into parts. Write a few
-                  lines about each one. A paragraph describing a feature
-                  will.
+                https://mooc.chula.ac.th/
                 </p>
             </Col>
 
@@ -53,9 +51,7 @@ export default function LandingPage() {
                 />
                 <hr className="line-warning" />
                 <p>
-                  Divide details about your product or agency work into
-                  parts. Write a few lines about each one. A paragraph
-                  describing feature will be a feature.
+                https://elearning.set.or.th/
                 </p>
             </Col>
           </Row>
