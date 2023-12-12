@@ -236,27 +236,6 @@ export default function PaginationSection() {
                 </NavLink>
               </NavItem>
 
-              <NavItem>
-                <NavLink
-                  className={classnames({
-                    "active show": pills === 12,
-                  })}
-                  onClick={(e) => setPills(12)}
-                  href="#pablo"
-                  style={{ fontSize: "14px" }}
-                  
-                >
-                  <br></br>
-                  <img
-                  alt="Java "
-                  src="https://img.icons8.com/?size=512&id=13679&format=png"
-                  style={{ height: "70px", width:"70px" }}
-                />
-                <br></br>
-                <br></br>
-                  Java
-                </NavLink>
-              </NavItem>
             </Nav>
           </Col>
         </Row>

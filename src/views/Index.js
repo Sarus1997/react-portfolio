@@ -12,8 +12,8 @@ import Pagination from "views/IndexSections/Pagination.js";
 import Typography from "views/IndexSections/Typography.js";
 import JavaScript from "views/IndexSections/JavaScript.js";
 import Other from "views/IndexSections/Other.js";
-import Examples from "views/IndexSections/Examples.js";
 import Crudtest from "views/IndexSections/Crudtest.js";
+import Examples from "views/IndexSections/Examples.js";
 
 export default function Index() {
   React.useEffect(() => {
@@ -35,7 +35,7 @@ export default function Index() {
           <Crudtest />
           <JavaScript />
           <Other />
-          <Examples />
+          <Examples/>
         </div>
         <Footer />
       </div>

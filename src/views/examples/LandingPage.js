@@ -338,7 +338,7 @@ export default function LandingPage() {
                 <img
                   alt="..."
                   className="img-fluid floating"
-                  src={require("https://t3.gstatic.com/licensed-image?q=tbn:ANd9GcRoT6NNDUONDQmlthWrqIi_frTjsjQT4UZtsJsuxqxLiaFGNl5s3_pBIVxS6-VsFUP_")}
+                  src={require("assets/img/other/code.jpg")}
                 />
                 <Card className="card-stats bg-danger">
                   <CardBody>

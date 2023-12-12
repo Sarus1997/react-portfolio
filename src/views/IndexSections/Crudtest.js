@@ -26,10 +26,29 @@ export default class Crudtest extends Component {
             sex: '',
             old: '',
             about: '',
-            items: [],
+            items: [
+                {
+                    id: 1,
+                    fname: 'John',
+                    lname: 'Doe',
+                    sex: 'ชาย',
+                    old: 30,
+                    about: 'Lorem ipsum dolor sit amet.'
+                },
+                {
+                    id: 2,
+                    fname: 'Jane',
+                    lname: 'Doe',
+                    sex: 'หญิง',
+                    old: 28,
+                    about: 'Consectetur adipiscing elit.'
+                },
+                
+            ],
             editIndex: -1,
             isModalOpen: false,
         };
+        
     }
 
     // Function to handle input changes

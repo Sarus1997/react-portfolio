@@ -39,9 +39,6 @@ export default function JavaScript() {
       />
       <div className="section">
         <Container>
-          <div className="title">
-            <h3>ผลงานที่ได้ทำ</h3>
-          </div>
           <Row className="justify-content-between align-items-center">
             <Col className="mb-5 mb-lg-0" lg="5">
               <h1 className="text-white font-weight-light">

@@ -1,6 +1,4 @@
-
 import React from "react";
-import { Link } from "react-router-dom";
 // reactstrap components
 import {
   Button,
@@ -8,6 +6,99 @@ import {
   Row,
   Col,
 } from "reactstrap";
+
+const ImglItems = [
+  {
+    id: '1',
+    src: require("assets/img/project/pj-01.png"),
+    caption: "Web Story Online",
+  },
+  {
+    id: '2',
+    src: require("assets/img/project/pj-02.png"),
+    caption: "Web Story Online",
+  },
+  {
+    id: '3',
+    src: require("assets/img/project/pj-03.png"),
+    caption: "Web Story Online",
+  }
+];
+
+const ImgProject = [
+  {
+    id: '1',
+    src: require("assets/img/final-pj/final-01.png"),
+    caption: "Final Project",
+  },
+  {
+    id: '2',
+    src: require("assets/img/final-pj/final-02.png"),
+    caption: "Final Project",
+  },
+  {
+    id: '3',
+    src: require("assets/img/final-pj/final-03.png"),
+    caption: "Final Project",
+  },
+  {
+    id: '4',
+    src: require("assets/img/final-pj/final-04.png"),
+    caption: "Final Project",
+  },
+  {
+    id: '5',
+    src: require("assets/img/final-pj/final-05.png"),
+    caption: "Final Project",
+  },
+  {
+    id: '6',
+    src: require("assets/img/final-pj/final-06.png"),
+    caption: "Final Project",
+  },
+  {
+    id: '7',
+    src: require("assets/img/final-pj/final-07.png"),
+    caption: "Final Project",
+  },
+  {
+    id: '8',
+    src: require("assets/img/final-pj/final-08.png"),
+    caption: "Final Project",
+  },
+  {
+    id: '9',
+    src: require("assets/img/final-pj/final-09.png"),
+    caption: "Final Project",
+  },
+  {
+    id: '10',
+    src: require("assets/img/final-pj/final-10.png"),
+    caption: "Final Project",
+  },
+  {
+    id: '11',
+    src: require("assets/img/final-pj/final-11.png"),
+    caption: "Final Project",
+  },
+  {
+    id: '12',
+    src: require("assets/img/final-pj/final-12.png"),
+    caption: "Final Project",
+  },
+  {
+    id: '13',
+    src: require("assets/img/final-pj/final-13.png"),
+    caption: "Final Project",
+  },
+  {
+    id: '14',
+    src: require("assets/img/final-pj/final-14.png"),
+    caption: "Final Project",
+  }
+];
+
+
 
 export default function Signup() {
   return (
@@ -18,26 +109,161 @@ export default function Signup() {
         <div className="squares square-3" />
         <div className="squares square-4" />
         <Row className="row-grid justify-content-between align-items-center">
-          <Col lg="6">
+          <Col>
             <h3 className="display-3 text-white">
-              A beautiful Black Design{" "}
-              <span className="text-white">completed with examples</span>
+              โปรเจกต์ที่ได้ทำระหว่างเรียน
             </h3>
             <p className="text-white mb-3">
-              The Design System comes with four pre-built pages to help you get
-              started faster. You can change the text and images and you're good
-              to go. More importantly, looking at them will give you a picture
-              of what you can built with this powerful Bootstrap 4 Design
-              System.
+              โปรเจกต์ที่ได้ทำระหว่างเรียน ซึ่งได้ใช้ทั้ง Html 5 , Css3 , JavaScript , Bootstrap เป็นพื้นฐานสำคัญ
             </p>
             <div className="btn-wrapper">
-              <Button color="primary" to="register-page" tag={Link}>
-                Register Page
+              <Row>
+                <Col sm="6">
+                  {ImglItems.map((item, index) => (
+                    item.id === '1' && (
+                      <div key={index}>
+                        <img src={item.src} alt={item.caption} style={{ width: '100%' }} />
+                        <h6 style={{ marginTop: '20px' }}>
+                          {item.caption}
+                        </h6>
+                      </div>
+                    )
+                  ))}
+                </Col>
+
+                <Col sm="6">
+                  {ImglItems.map((item, index) => (
+                    item.id === '2' && (
+                      <div key={index}>
+                        <img src={item.src} alt={item.caption} style={{ width: '100%' }} />
+                        <h6 style={{ marginTop: '20px' }}>
+                          {item.caption}
+                        </h6>
+                      </div>
+                    )
+                  ))}
+                </Col>
+              </Row>
+
+              <Row>
+                <Col sm="6">
+                  {ImglItems.map((item, index) => (
+                    item.id === '3' && (
+                      <div key={index}>
+                        <img src={item.src} alt={item.caption} style={{ width: '100%' }} />
+                        <h6 style={{ marginTop: '20px' }}>
+                          {item.caption}
+                        </h6>
+                      </div>
+                    )
+                  ))}
+                </Col>
+              </Row>
+
+              <br />
+              <hr
+                style={{
+                  borderWidth: '0.5px',
+                  borderColor: '#B244B5',
+                  width: '100%'
+                }} />
+
+              {/* final projection */}
+
+              <Row>
+                {/* 1 */}
+                <Col sm="4">
+                  {ImgProject.map((item, index) => (
+                    item.id === '1' && (
+                      <div key={index}>
+                        <img src={item.src} alt={item.caption} style={{ width: '100%' }} />
+                        <h6 style={{ marginTop: '20px' }}>
+                          {item.caption}
+                        </h6>
+                      </div>
+                    )
+                  ))}
+                </Col>
+
+                {/* 2 */}
+                <Col sm="4">
+                  {ImgProject.map((item, index) => (
+                    item.id === '2' && (
+                      <div key={index}>
+                        <img src={item.src} alt={item.caption} style={{ width: '100%' }} />
+                        <h6 style={{ marginTop: '20px' }}>
+                          {item.caption}
+                        </h6>
+                      </div>
+                    )
+                  ))}
+                </Col>
+
+                {/* 3 */}
+                <Col sm="4">
+                  {ImgProject.map((item, index) => (
+                    item.id === '3' && (
+                      <div key={index}>
+                        <img src={item.src} alt={item.caption} style={{ width: '100%' }} />
+                        <h6 style={{ marginTop: '20px' }}>
+                          {item.caption}
+                        </h6>
+                      </div>
+                    )
+                  ))}
+                </Col>
+              </Row>
+
+
+              <Row>
+                {/* 9 */}
+                <Col sm="4">
+                  {ImgProject.map((item, index) => (
+                    item.id === '9' && (
+                      <div key={index}>
+                        <img src={item.src} alt={item.caption} style={{ width: '100%' }} />
+                        <h6 style={{ marginTop: '20px' }}>
+                          {item.caption}
+                        </h6>
+                      </div>
+                    )
+                  ))}
+                </Col>
+
+                {/* 10 */}
+                <Col sm="4">
+                  {ImgProject.map((item, index) => (
+                    item.id === '10' && (
+                      <div key={index}>
+                        <img src={item.src} alt={item.caption} style={{ width: '100%' }} />
+                        <h6 style={{ marginTop: '20px' }}>
+                          {item.caption}
+                        </h6>
+                      </div>
+                    )
+                  ))}
+                </Col>
+
+                {/* 13 */}
+                <Col sm="4">
+                  {ImgProject.map((item, index) => (
+                    item.id === '13' && (
+                      <div key={index}>
+                        <img src={item.src} alt={item.caption} style={{ width: '100%' }} />
+                        <h6 style={{ marginTop: '20px' }}>
+                          {item.caption}
+                        </h6>
+                      </div>
+                    )
+                  ))}
+                </Col>
+              </Row>
+
+              <Button className="mt-4" color="primary" href="https://github.com/Sarus1997">
+                <i className="fab fa-github">&nbsp;</i>
+                ผลงานอื่นๆ
               </Button>
             </div>
-          </Col>
-          <Col className="mb-lg-auto" lg="6">
-
           </Col>
         </Row>
       </Container>

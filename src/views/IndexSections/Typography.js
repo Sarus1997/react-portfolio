@@ -18,7 +18,6 @@ export default function Typography() {
         <div id="typography">
           <Row>
             <Col md="12">
-
               <div className="typography-line">
                 <span style={{ display: "flex", alignItems: "center" }}>
                   <img
@@ -30,7 +29,7 @@ export default function Typography() {
                   <span style={{ marginLeft: "50px" }}>Visual Studio Code</span>
                 </span>
                 <p className="text-info" style={{ marginLeft: "50px" }}>
-                  ใช้ในการพัมนาเว็บไซต์และโปรแกรมเป็นหลัก โดยรองรับทุกภาษาโปรแกรมมิ่ง และมีส่วนเสริมให้ใช้งานมากมาย
+                  ใช้ในการพัมนาเว็บไซต์
                 </p>
               </div>
 
@@ -45,8 +44,7 @@ export default function Typography() {
                   <span style={{ marginLeft: "50px" }}>pycharm</span>
                 </span>
                 <p className="text-primary" style={{ marginLeft: "50px" }}>
-                ใช้พัฒนาโปรแกรมภาษา Python เป็นหลัก แต่ก็สามารถพัฒนาภาษาโปรแกรมมิ่งอื่นๆ ได้เหมือนกับ
-                Visual Studio Code เชนเดียวกัน
+                ใช้พัฒนาโปรแกรมภาษา Python เป็นหลัก แต่ก็สามารถใช่กับภาษาอื่นๆได้เช่นเดียวกัน
                 </p>
               </div>
 
@@ -61,8 +59,7 @@ export default function Typography() {
                   <span style={{ marginLeft: "50px" }}>Github</span>
                 </span>
                 <p className="text-info" style={{ marginLeft: "50px" }}>
-                  ใช้ในการรวบรวม บันทึก ผลงานหรือโปนเจคที่เกี่ยวข้องกับการพัฒนาโปรแกรมเป็นหลัก
-                  และสามารถดาวน์โหลดโค้ดต่างๆมาใช้งานได้อีก
+                  ใช้ในการรวบรวมโปรเจกต์ที่ได้ทำ
                 </p>
               </div>
 
@@ -77,8 +74,7 @@ export default function Typography() {
                   <span style={{ marginLeft: "50px" }}>Google Chome</span>
                 </span>
                 <p className="text-success" style={{ marginLeft: "50px" }}>
-                  ใช้ในการรันโปรเจคที่เป็นการพัฒนาเว็บไซต์ เพื่อดูผลลัพธ์ 
-                  และใช้ในการท่องเว็บไซต์ต่างๆ
+                  ใช้ในการรันโปรเจคที่เป็นการพัฒนาเว็บไซต์ เพื่อดูผลลัพธ์
                 </p>
               </div>
 
@@ -109,7 +105,6 @@ export default function Typography() {
                 </span>
                 <p className="text-success" style={{ marginLeft: "50px" }}>
                 เป็นฐานข้อมูลสำหรับภาษาฐานข้อมูล SQL และตัวจำลองเซิร์ฟเวอร์ของโปรเจคที่ใช้ MySQL
-                รองรับการทำงานที่หลากหลาย และทำงานร่วมกับ Oracle ได้
                 </p>
               </div>
 
@@ -124,8 +119,37 @@ export default function Typography() {
                   <span style={{ marginLeft: "50px" }}>XAMPP</span>
                 </span>
                 <p className="text-warning" style={{ marginLeft: "50px" }}>
-                  เป็นจำลองเซิร์ฟเวอร์ที่รองรับ ภาษา PHP , SQL ใช้งานง่าย แต่อาจจะยุ่งยาก
-                  ในช่วงการติดตั้งเล็กน้อย
+                  เป็นตัวจำลองเซิร์ฟเวอร์ที่เป็นฐานข้อมูล Sql
+                </p>
+              </div>
+
+              <div className="typography-line">
+                <span style={{ display: "flex", alignItems: "center" }}>
+                  <img
+                    alt="XAMPP"
+                    className="img-fluid rounded shadow"
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Adobe_Premiere_Pro_CC_icon.svg/2101px-Adobe_Premiere_Pro_CC_icon.svg.png"
+                    style={{ height: "35px" }}
+                  />
+                  <span style={{ marginLeft: "50px" }}>Adobe Premier Pro</span>
+                </span>
+                <p className="text-success" style={{ marginLeft: "50px" }}>
+                  ใช้สำหรับตัดต่อวิดีโอ
+                </p>
+              </div>
+
+              <div className="typography-line">
+                <span style={{ display: "flex", alignItems: "center" }}>
+                  <img
+                    alt="XAMPP"
+                    className="img-fluid rounded shadow"
+                    src="https://freelogopng.com/images/all_img/1656733637logo-canva-png.png"
+                    style={{ height: "35px" }}
+                  />
+                  <span style={{ marginLeft: "50px" }}>Canva</span>
+                </span>
+                <p className="text-primary" style={{ marginLeft: "50px" }}>
+                  ทำพรีเซนเทชั่น และงานเอกสารต่างๆ
                 </p>
               </div>
             </Col>
