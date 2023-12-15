@@ -43,6 +43,7 @@ export default function JavaScript() {
             <Col className="mb-5 mb-lg-0" lg="5">
               <h1 className="text-white font-weight-light">
               ผลงานที่ได้ทำ
+              <hr className="line-success" style={{width:'150px',marginTop:'20px'}}/>
               </h1>
               <p className="text-white mt-4">
               เป็นผลงานที่ได้ทำในช่วงที่ได้สหกิจศึกษา 8 เดือน

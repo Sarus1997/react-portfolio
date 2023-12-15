@@ -23,31 +23,33 @@ export default function Tabs() {
     <div className="section section-tabs">
       <Container>
         <div className="title">
-          <h3 className="mb-3">ข้อมูลส่วนตัว</h3>
+          <h3 className="mb-3">ข้อมูลส่วนตัว
+            <hr className="line-success" style={{ width: '150px', marginTop: '20px' }} />
+          </h3>
           <br></br>
           <div class="container-fluid">
-          <Row >
-            <Col lg={4} md={4} >
-              <div className="text-lift">
-                <p><i class="tim-icons icon-badge"></i>&nbsp; &nbsp; ชื่อ  : นายสหรัฐ สุวรรณภาพร</p>
-                <p><i class="tim-icons icon-link-72"></i>&nbsp; &nbsp; เชื้อชาติ : ไทย </p>
-              </div>
-            </Col>
+            <Row >
+              <Col lg={4} md={4} >
+                <div className="text-lift">
+                  <p><i class="tim-icons icon-badge"></i>&nbsp; &nbsp; ชื่อ  : นายสหรัฐ สุวรรณภาพร</p>
+                  <p><i class="tim-icons icon-link-72"></i>&nbsp; &nbsp; เชื้อชาติ : ไทย </p>
+                </div>
+              </Col>
 
-            <Col lg={4} md={4} >
-            <div className="text-lift">
-                <p><i class="tim-icons icon-pencil"></i>&nbsp; &nbsp; ชื่อเล่น : รุส</p>
-                <p><i class="tim-icons icon-caps-small"></i>&nbsp; &nbsp; สัญชาติ : ไทย</p>
-              </div>
-            </Col>
+              <Col lg={4} md={4} >
+                <div className="text-lift">
+                  <p><i class="tim-icons icon-pencil"></i>&nbsp; &nbsp; ชื่อเล่น : รุส</p>
+                  <p><i class="tim-icons icon-caps-small"></i>&nbsp; &nbsp; สัญชาติ : ไทย</p>
+                </div>
+              </Col>
 
-            <Col lg={4} md={4} >
-            <div className="text-lift">
-                <p><i class="tim-icons icon-calendar-60"></i>&nbsp; &nbsp; วันเกิด : 12/06/1997</p>
-                <p><i class="tim-icons icon-satisfied"></i>&nbsp; &nbsp; ศาสนา : อิสลาม</p>
-              </div>
-            </Col>
-          </Row>
+              <Col lg={4} md={4} >
+                <div className="text-lift">
+                  <p><i class="tim-icons icon-calendar-60"></i>&nbsp; &nbsp; วันเกิด : 12/06/1997</p>
+                  <p><i class="tim-icons icon-satisfied"></i>&nbsp; &nbsp; ศาสนา : อิสลาม</p>
+                </div>
+              </Col>
+            </Row>
           </div>
         </div>
         <br></br>
@@ -123,7 +125,7 @@ export default function Tabs() {
           <Col className="ml-auto mr-auto" md="10" xl="6">
             <div className="mb-3">
               <h5 className="text-uppercase font-weight-bold">
-              การศึกษา : ระดับปริญญาบัณฑิต
+                การศึกษา : ระดับปริญญาบัณฑิต
               </h5>
             </div>
             <Card>

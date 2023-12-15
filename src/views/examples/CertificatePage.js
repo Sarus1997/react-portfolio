@@ -24,11 +24,15 @@ export default function LandingPage() {
     <>
       <IndexNavbar />
       <div className="wrapper">
+        <br />
         <Container>
           <h1
-            style={{ margin: '150px' }}
+            style={{ margin: '100px' }}
             className="text-center">
-            Certificate
+            ใบรับรอง
+            <hr className="line-success"
+            style={{width:'40%',margin:'0 auto'}}
+            />
           </h1>
           <Row>
             <Col md="6">
@@ -39,8 +43,9 @@ export default function LandingPage() {
                 />
                 <hr className="line-primary" />
                 <p>
-                https://mooc.chula.ac.th/
+                <a href="https://mooc.chula.ac.th/">https://mooc.chula.ac.th/</a>
                 </p>
+                <br />
             </Col>
 
             <Col md="6">
@@ -51,11 +56,39 @@ export default function LandingPage() {
                 />
                 <hr className="line-warning" />
                 <p>
-                https://elearning.set.or.th/
+                <a href="https://elearning.set.or.th/">https://elearning.set.or.th/</a>
                 </p>
+                <br />
             </Col>
           </Row>
           
+          <Row>
+            <Col md="6">
+                <img
+                  alt="..."
+                  className="path1"
+                  src={require("assets/img/bs/bs3.jpg")}
+                />
+                <hr className="line-primary" />
+                <p>
+                <a href="https://mooc.chula.ac.th/">https://mooc.chula.ac.th/</a>
+                </p>
+                <br />
+            </Col>
+
+            <Col md="6">
+                <img
+                  alt="..."
+                  className="path1"
+                  src={require("assets/img/bs/bs4.jpg")}
+                />
+                <hr className="line-warning" />
+                <p>
+                <a href="https://mooc.chula.ac.th/">https://mooc.chula.ac.th/</a>
+                </p>
+                <br />
+            </Col>
+          </Row>
         </Container>
 
         <br />

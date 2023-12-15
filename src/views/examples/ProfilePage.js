@@ -44,6 +44,24 @@ const carouselItems = [
   },
 ];
 
+const ImglItems = [
+  {
+    id: '1',
+    src: require("assets/img/it-room/it1.png"),
+    caption: "ผังองค์กรแผนกไอที",
+  },
+  {
+    id: '2',
+    src: require("assets/img/it-room/it2.png"),
+    caption: "ผังองค์กรแผนกไอที",
+  },
+  {
+    id: '3',
+    src: require("assets/img/it-room/it3.png"),
+    caption: "ผังองค์กรแผนกไอที",
+  }
+];
+
 
 let ps = null;
 
@@ -90,9 +108,9 @@ export default function ProfilePage() {
                 <h1 className="profile-title text-left">สหรัฐ สุวรรณภาพร</h1>
                 <h5 className="text-on-back">01</h5>
                 <p className="profile-description">
-                  การศึกษา : มหาวิทยาลัยวลัยลักษณ์ <br/>
-                  สาขา : เทคโนโลยีสารสนเทศและนวัตกรรมดิจิทัล <br/>
-                  GPAX : 3.17 <br/>
+                  การศึกษา : มหาวิทยาลัยวลัยลักษณ์ <br />
+                  สาขา : เทคโนโลยีสารสนเทศและนวัตกรรมดิจิทัล <br />
+                  GPAX : 3.17 <br />
                 </p>
                 <div className="btn-wrapper profile pt-3">
                   <Button
@@ -151,7 +169,7 @@ export default function ProfilePage() {
                     <img
                       alt="..."
                       className="img-center img-fluid rounded-circle"
-                      style={{height: '120px', width: '120px', objectFit:'cover'}}
+                      style={{ height: '120px', width: '120px', objectFit: 'cover' }}
                       src={require("assets/img/profile/1997.jpg")}
                     />
                     <h4 className="title">ประวัติโดยย่อ</h4>
@@ -224,7 +242,7 @@ export default function ProfilePage() {
                         </Table>
                       </TabPane>
                       <TabPane tabId="tab2">
-                      <Table className="tablesorter" responsive>
+                        <Table className="tablesorter" responsive>
                           <tbody>
                             <tr>
                               <td>ม.ต้น : โรงเรียนสตูลวิทยา</td>
@@ -288,6 +306,67 @@ export default function ProfilePage() {
             </Row>
           </Container>
         </div>
+
+        <div className="section">
+          <Container>
+            <h3 className="display-3 text-white">
+            ผังองค์กรแผนกไอที
+            <hr className="line-primary" style={{ width: '150px', marginTop: '20px' }} />
+            </h3>
+            <p className="text-white mb-3">
+              โปรเจกต์ที่ได้ทำระหว่างสหกิจศึกษา ซึ่งเป็นระบบที่ใช้งานภายในองค์กร
+            </p>
+            <div className="btn-wrapper">
+              <Container>
+                <Row>
+                  <Col sm="6">
+                    {ImglItems.map((item, index) => (
+                      item.id === '1' && (
+                        <div key={index}>
+                          <img src={item.src} alt={item.caption} style={{ width: '250px' }} />
+                          <h6 style={{ marginTop: '20px' }}>
+                            {item.caption}
+                          </h6>
+                          <hr className="line-primary" style={{ width: '150px', marginTop: '20px' }} />
+                        </div>
+                      )
+                    ))}
+                  </Col>
+
+                  <Col sm="6">
+                    {ImglItems.map((item, index) => (
+                      item.id === '2' && (
+                        <div key={index}>
+                          <img src={item.src} alt={item.caption} style={{ width: '250px' }} />
+                          <h6 style={{ marginTop: '20px' }}>
+                            {item.caption}
+                          </h6>
+                          <hr className="line-primary" style={{ width: '150px', marginTop: '20px' }} />
+                        </div>
+                      )
+                    ))}
+                  </Col>
+                </Row>
+
+                <Row>
+                  <Col sm="6">
+                    {ImglItems.map((item, index) => (
+                      item.id === '3' && (
+                        <div key={index}>
+                          <img src={item.src} alt={item.caption} style={{ width: '250px' }} />
+                          <h6 style={{ marginTop: '20px' }}>
+                            {item.caption}
+                          </h6>
+                          <hr className="line-primary" style={{ width: '150px', marginTop: '20px' }} />
+                        </div>
+                      )
+                    ))}
+                  </Col>
+                </Row>
+              </Container>
+            </div>
+          </Container>
+        </div>
         <section className="section">
           <Container>
             <Row>
@@ -298,16 +377,16 @@ export default function ProfilePage() {
                     <h5 className="text-on-back">03</h5>
                   </CardHeader>
                   <CardBody>
-                  <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d1035.3114623892313!2d99.88367883512409!3d6.954150052573116!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNsKwNTcnMTUuMCJOIDk5wrA1MycwMS45IkU!5e1!3m2!1sth!2sth!4v1701663068386!5m2!1sth!2sth"
-                  width="100%"
-                  height="270"
-                  style={{ border: '0' }}
-                  allowFullScreen=""
-                  loading="lazy"
-                  title="Google Map"
-                >
-                </iframe>
+                    <iframe
+                      src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d1035.3114623892313!2d99.88367883512409!3d6.954150052573116!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNsKwNTcnMTUuMCJOIDk5wrA1MycwMS45IkU!5e1!3m2!1sth!2sth!4v1701663068386!5m2!1sth!2sth"
+                      width="100%"
+                      height="270"
+                      style={{ border: '0' }}
+                      allowFullScreen=""
+                      loading="lazy"
+                      title="Google Map"
+                    >
+                    </iframe>
                   </CardBody>
                 </Card>
               </Col>
@@ -332,8 +411,8 @@ export default function ProfilePage() {
                   <div className="description">
                     <h4 className="info-title">ช่องทางการติดต่อ</h4>
                     <p>
-                    Email : <a href="mailto:Saharat.rus@gmail.com"> Saharat.rus@gmail.com</a><br />
-                    Tel : <a href="tel:086-9728283">086-9728283</a>
+                      Email : <a href="mailto:Saharat.rus@gmail.com"> Saharat.rus@gmail.com</a><br />
+                      Tel : <a href="tel:086-9728283">086-9728283</a>
                     </p>
                   </div>
                 </div>

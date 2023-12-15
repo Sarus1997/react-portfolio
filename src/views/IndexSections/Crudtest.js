@@ -25,7 +25,7 @@ export default class Crudtest extends Component {
             lname: '',
             sex: '',
             old: '',
-            about: '',
+            jobs: '',
             items: [
                 {
                     id: 1,
@@ -33,7 +33,7 @@ export default class Crudtest extends Component {
                     lname: 'Doe',
                     sex: 'ชาย',
                     old: 30,
-                    about: 'about'
+                    jobs: 'jobs'
                 },
                 {
                     id: 2,
@@ -41,14 +41,14 @@ export default class Crudtest extends Component {
                     lname: 'Doe',
                     sex: 'หญิง',
                     old: 28,
-                    about: 'about'
+                    jobs: 'jobs'
                 },
-                
+
             ],
             editIndex: -1,
             isModalOpen: false,
         };
-        
+
     }
 
     // Function to handle input changes
@@ -77,7 +77,7 @@ export default class Crudtest extends Component {
             lname: this.state.lname,
             sex: this.state.sex,
             old: this.state.old,
-            about: this.state.about,
+            jobs: this.state.jobs,
         };
 
         this.setState((prevState) => ({
@@ -86,7 +86,7 @@ export default class Crudtest extends Component {
             lname: '',
             sex: '',
             old: '',
-            about: '',
+            jobs: '',
             isModalOpen: false,
         }));
     }
@@ -108,7 +108,7 @@ export default class Crudtest extends Component {
             lname: itemToEdit.lname,
             sex: itemToEdit.sex,
             old: itemToEdit.old,
-            about: itemToEdit.about,
+            jobs: itemToEdit.jobs,
             editIndex: index,
             isModalOpen: true,
         });
@@ -123,7 +123,7 @@ export default class Crudtest extends Component {
             lname: this.state.lname,
             sex: this.state.sex,
             old: this.state.old,
-            about: this.state.about,
+            jobs: this.state.jobs,
         };
 
         this.setState({
@@ -133,7 +133,7 @@ export default class Crudtest extends Component {
             lname: '',
             sex: '',
             old: '',
-            about: '',
+            jobs: '',
             editIndex: -1,
             isModalOpen: false,
         });
@@ -145,22 +145,20 @@ export default class Crudtest extends Component {
 
         return (
             <Container>
-                <h2 className="title">Test CRUD</h2>
-                <h4  className="container-fluid">ทดลองใช้งาน</h4>
+                <h2 className="title">Test CRUD
+                    <hr className="line-success" style={{ width: '150px', marginTop: '20px' }} />
+                </h2>
+                <h4 className="container-fluid">ทดลองใช้งาน</h4>
                 <Row>
                     <Col>
                         <div className="modal-header">
-                                <Button color="primary" onClick={this.toggleModal}>
-                                    เพิ่มข้อมูล
-                                </Button>
+                            <Button color="primary" onClick={this.toggleModal}>
+                                เพิ่มข้อมูล
+                            </Button>
                             <Modal modalClassName="modal-black" isOpen={this.state.isModalOpen} toggle={this.toggleModal}>
                                 <ModalHeader toggle={this.toggleModal}><h1>เพิ่มข้อมูล</h1></ModalHeader>
                                 <ModalBody>
                                     <Form>
-                                        {/* <FormGroup>
-                                        <Label for="id">Id</Label>
-                                        <Input type="text" name="id" id="id" placeholder="Id" value={this.state.id} onChange={this.handleChange} />
-                                    </FormGroup> */}
                                         <FormGroup>
                                             <Label for="fname">ชื่อ</Label>
                                             <Input type="text" name="fname" id="fname" placeholder="Enter firstname" value={this.state.fname} onChange={this.handleChange} />
@@ -183,22 +181,25 @@ export default class Crudtest extends Component {
                                                 type="number" name="old" id="old" placeholder="Enter old" value={this.state.old} onChange={this.handleChange} />
                                         </FormGroup>
                                         <FormGroup>
-                                            <Label for="about">อธิบายเกี่ยวตัวเอง</Label>
-                                            <Input type="text" name="about" id="about" placeholder="Enter about" value={this.state.about} onChange={this.handleChange} />
+                                            <Label for="jobs">อธิบายเกี่ยวตัวเอง</Label>
+                                            <Input type="text" name="jobs" id="jobs" placeholder="Enter jobs" value={this.state.jobs} onChange={this.handleChange} />
                                         </FormGroup>
                                         <div className="text-right">
                                             {this.state.editIndex === -1 ? (
-                                                <Button color="success" onClick={this.handleAddItem}>Add</Button>
+                                                <Button color="success" onClick={this.handleAddItem}>เพิ่ม</Button>
                                             ) : (
-                                                <Button color="success" onClick={this.handleUpdateItem}>Update</Button>
+                                                <Button color="success" onClick={this.handleUpdateItem}>บันทึก</Button>
                                             )}
                                         </div>
                                     </Form>
                                 </ModalBody>
                                 <ModalFooter>
                                     <div className="ml-auto">
-                                        <Button color="danger" onClick={this.toggleModal}>
-                                            Close
+                                        <Button
+                                            style={{ fontSize: '15px', padding: '5px 15px', marginRight: '5px' }}
+                                            color="danger"
+                                            onClick={this.toggleModal}>
+                                            ปิด
                                         </Button>
                                     </div>
                                 </ModalFooter>
@@ -213,28 +214,40 @@ export default class Crudtest extends Component {
                     <Col>
                         <Table>
                             <thead>
-                                <tr>
+                                <tr style={{ fontSize: '10px' }}>
                                     <th >ลำดับ</th>
                                     <th >ชื่อ</th>
                                     <th >นามสกุล</th>
                                     <th >เพศ</th>
                                     <th >อายุ</th>
-                                    <th >อธิบายเกี่ยวตัวเอง</th>
+                                    <th >อาชีพ</th>
                                     <th >   </th>
                                 </tr>
                             </thead>
                             <tbody>
                                 {this.state.items.map((item, index) => (
                                     <tr key={item.id}>
-                                        <td>{item.id}</td>
-                                        <td>{item.fname}</td>
-                                        <td>{item.lname}</td>
-                                        <td>{item.sex}</td>
-                                        <td>{item.old}</td>
-                                        <td>{item.about}</td>
-                                        <td>
-                                            <Button color="info" onClick={() => this.handleEditItem(index)}>Edit</Button>
-                                            <Button color="danger" onClick={() => this.handleDeleteItem(index)}>Delete</Button>
+                                        <td style={{ fontSize: '12px' }}>{item.id}</td>
+                                        <td style={{ fontSize: '12px' }}>{item.fname}</td>
+                                        <td style={{ fontSize: '12px' }}>{item.lname}</td>
+                                        <td style={{ fontSize: '12px' }}>{item.sex}</td>
+                                        <td style={{ fontSize: '12px' }}>{item.old}</td>
+                                        <td style={{ fontSize: '12px' }}>{item.jobs}</td>
+                                        <td style={{ textAlign: 'right' }}>
+                                            <Button
+                                                style={{ fontSize: '10px', padding: '5px 6px', marginRight: '5px' }}
+                                                color="info"
+                                                onClick={() => this.handleEditItem(index)}
+                                            >
+                                                แก้ไข
+                                            </Button>
+                                            <Button
+                                                style={{ fontSize: '10px', padding: '5px 10px', marginRight: '5px' }}
+                                                color="danger"
+                                                onClick={() => this.handleDeleteItem(index)}
+                                            >
+                                                ลบ
+                                            </Button>
                                         </td>
                                     </tr>
                                 ))}

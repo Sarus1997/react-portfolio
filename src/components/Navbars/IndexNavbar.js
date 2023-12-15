@@ -83,9 +83,15 @@ export default function IndexNavbar() {
           <div className="navbar-collapse-header">
             <Row>
               <Col className="collapse-brand" xs="6">
-                <a href="#pablo" onClick={(e) => e.preventDefault()}>
-                REACT• MY PORTFOLIO
-                </a>
+                <NavbarBrand to="/" tag={Link} id="navbar-brand">
+                  <span 
+                  style={{fontSize:'22px', color:'#AF44C2'}}
+                  >REACT• </span>
+                  &nbsp;
+                  <font
+                  style={{fontSize:'18px', color:'#1D8CF8'}}
+                  >MY PORTFOLIO</font>
+                </NavbarBrand>
               </Col>
               <Col className="collapse-close text-right" xs="6">
                 <button
@@ -150,7 +156,7 @@ export default function IndexNavbar() {
               <DropdownMenu className="dropdown-with-icons">
                 <DropdownItem tag={Link} to="/certificate-page">
                   <i className="tim-icons icon-image-02" />
-                  รวมใบเซอร์
+                  รวมใบรับรอง
                 </DropdownItem>
                 <DropdownItem tag={Link} to="/profile-page">
                   <i className="tim-icons icon-single-02" />

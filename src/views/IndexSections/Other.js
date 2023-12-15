@@ -126,6 +126,7 @@ export default function Signup() {
                         <h6 style={{ marginTop: '20px' }}>
                           {item.caption}
                         </h6>
+                        <hr className="line-primary" style={{ width: '150px', marginTop: '20px' }} />
                       </div>
                     )
                   ))}
@@ -139,6 +140,7 @@ export default function Signup() {
                         <h6 style={{ marginTop: '20px' }}>
                           {item.caption}
                         </h6>
+                        <hr className="line-primary" style={{ width: '150px', marginTop: '20px' }} />
                       </div>
                     )
                   ))}
@@ -154,6 +156,7 @@ export default function Signup() {
                         <h6 style={{ marginTop: '20px' }}>
                           {item.caption}
                         </h6>
+                        <hr className="line-primary" style={{ width: '150px', marginTop: '20px' }} />
                       </div>
                     )
                   ))}
@@ -180,6 +183,7 @@ export default function Signup() {
                         <h6 style={{ marginTop: '20px' }}>
                           {item.caption}
                         </h6>
+                        <hr className="line-success" style={{ width: '150px', marginTop: '20px' }} />
                       </div>
                     )
                   ))}
@@ -194,6 +198,7 @@ export default function Signup() {
                         <h6 style={{ marginTop: '20px' }}>
                           {item.caption}
                         </h6>
+                        <hr className="line-success" style={{ width: '150px', marginTop: '20px' }} />
                       </div>
                     )
                   ))}
@@ -208,6 +213,7 @@ export default function Signup() {
                         <h6 style={{ marginTop: '20px' }}>
                           {item.caption}
                         </h6>
+                        <hr className="line-success" style={{ width: '150px', marginTop: '20px' }} />
                       </div>
                     )
                   ))}
@@ -225,6 +231,7 @@ export default function Signup() {
                         <h6 style={{ marginTop: '20px' }}>
                           {item.caption}
                         </h6>
+                        <hr className="line-success" style={{ width: '150px', marginTop: '20px' }} />
                       </div>
                     )
                   ))}
@@ -239,6 +246,7 @@ export default function Signup() {
                         <h6 style={{ marginTop: '20px' }}>
                           {item.caption}
                         </h6>
+                        <hr className="line-success" style={{ width: '150px', marginTop: '20px' }} />
                       </div>
                     )
                   ))}
@@ -253,6 +261,7 @@ export default function Signup() {
                         <h6 style={{ marginTop: '20px' }}>
                           {item.caption}
                         </h6>
+                        <hr className="line-success" style={{ width: '150px', marginTop: '20px' }} />
                       </div>
                     )
                   ))}

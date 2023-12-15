@@ -14,6 +14,9 @@ import JavaScript from "views/IndexSections/JavaScript.js";
 import Other from "views/IndexSections/Other.js";
 import Crudtest from "views/IndexSections/Crudtest.js";
 import Examples from "views/IndexSections/Examples.js";
+import Moretab from "views/IndexSections/Moretab.js";
+import Bi101 from "views/IndexSections/Bi101.js";
+import ItRoom from "views/IndexSections/ItRoom.js";
 
 export default function Index() {
   React.useEffect(() => {
@@ -30,11 +33,14 @@ export default function Index() {
         <PageHeader />
         <div className="main">
         <Tabs />
+        <Moretab />
           <Pagination />
           <Typography />
           <Crudtest />
           <JavaScript />
+          <ItRoom />
           <Other />
+          <Bi101 />
           <Examples/>
         </div>
         <Footer />
