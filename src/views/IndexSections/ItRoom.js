@@ -37,10 +37,11 @@ export default function Signup() {
                 <Row className="row-grid justify-content-between align-items-center">
                     <Col>
                         <h3 className="display-3 text-white">
-                            โปรเจกต์ที่ได้ทำระหว่างเรียน
+                            โปรเจกต์ที่ได้ทำระหว่างสหกิจศึกษา
                         </h3>
                         <p className="text-white mb-3">
-                            โปรเจกต์ที่ได้ทำระหว่างเรียน ซึ่งได้ใช้ทั้ง Html 5 , Css3 , JavaScript , Bootstrap เป็นพื้นฐานสำคัญ
+                        โปรเจกต์ที่ได้ทำระหว่างสหกิจศึกษา ซึ่งได้ใช้ทั้ง Html 5 , Css3 , JavaScript , Bootstrap เป็นพื้นฐานสำคัญ 
+                        โดยเป็นการนำ ธemplate แปลงไปยัง php Laravel
                         </p>
                         <div className="btn-wrapper">
                             <Container>
